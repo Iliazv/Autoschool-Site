@@ -1,0 +1,1851 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: top;
+}
+
+li {
+    list-style-type: none;
+}
+
+button, input {
+    border: 0px;
+}
+
+html,
+body {
+    letter-spacing: 0.4px;
+    font-family: 'Geologica', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}/* Reset styles */
+
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    padding: 35px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__icon {
+    width: 50px;
+    height: 50px;
+}
+
+.header__label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 1000;
+    max-width: 120px;
+    text-transform: uppercase;
+    vertical-align: -32px;
+    margin: 0 0 0 6px;
+    line-height: 14px;
+}
+
+.foot__label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 1000;
+    max-width: 120px;
+    text-transform: uppercase;
+    vertical-align: -32px;
+    margin: 0 0 0 6px;
+    line-height: 14px;
+    color: #fff;
+}
+
+.header__number {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    vertical-align: -8px;
+    margin: 0 0 0 5px;
+}
+
+/* .header__call {
+    display: flex;
+    align-items: center;
+} */
+
+.header__info {
+    padding: 0 0 0 55%;
+    justify-self: flex-end;
+}
+
+.header__phone {
+    width: 25px;
+    height: 25px;
+}
+
+.header__register {
+    width: 192px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #fff;
+    color: black;
+    font-size: 12px;
+    font-weight: 1000;
+    letter-spacing: 0.8px;
+    transition: 0.15s ease-in-out;
+}
+
+.header__register:hover {
+    background-color: rgb(242, 242, 242);
+    text-decoration: underline;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+.btn {
+    position: relative;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000000;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #000000;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #dddddd;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+
+.header__hidden {
+    padding: 32px 0 0 0;
+    margin: 0 0 0 15px;
+    display: none;
+}
+
+.background-city {
+    width: 1040px;
+    height: 520px;
+    position: absolute;
+    top: 80px;
+    right: 150px;
+    opacity: 0.2;
+}
+
+.background-car {
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    top: 250px;
+    right: 350px;
+    z-index: 1;
+}
+
+.entry {
+    padding: 200px 0 0 0;
+}
+
+.container__entry {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.entry__head {
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 57px;
+    color: rgb(45, 45, 67);
+    text-shadow: #e0e0e0 1px 1px 0;
+    max-width: 500px;
+}
+
+.entry__smaller {
+    font-size: 48px;
+}
+
+.entry__text {
+    padding: 40px 0 0 0;
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 400px;
+    line-height: 21px;
+    color: rgb(45, 45, 67);
+}
+
+.entry__red {
+    color: red;
+}
+
+.entry__button {
+    padding: 40px 0 0 0;
+}
+
+.gradient-button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 41px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 42%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    transition: .5s;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.4);
+}
+
+.gradient-button:hover {
+    background-position: right center;
+}
+
+.about {
+    position: relative;
+    background-color: rgb(45, 45, 67);
+    height: 775px;
+    margin: 100px 0 0 0;
+}
+
+.triangle {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 49.58vw solid transparent;
+    border-right: 49.58vw solid transparent;
+    border-bottom: 80px solid rgb(45, 45, 67);
+}
+
+.about__container {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.about__conus {
+    position: absolute;
+    top: -10px;
+    left: 65%;
+    width: 65px;
+    height: 88px;
+}
+
+.about__arrow {
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
+.arrow__swipe {
+    position: absolute;
+    width: 32px;
+    height: 50px;
+    z-index: 5;
+    background-color: rgb(45, 45, 67);
+    border: 1px solid rgba(128, 128, 128, 0.511);
+    text-align: center;
+    padding: 14px 0;
+    transition: 0.15s ease-in-out;
+}
+
+.arrow__swipe:hover {
+    border: 1px solid rgba(161, 161, 161, 0.511);
+}
+
+.arrow__swipe:hover .about__icon {
+    margin: -2px 0 0 0;
+    width: 23px;
+    height: 23px;
+}
+
+.about__icon {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    transition: 0.15s ease-in-out;
+}
+
+.about__block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 150px 0 0 0;
+}
+
+.about__school {
+    position: relative;
+    width: 435px;
+    height: 370px;
+}
+
+.about__frame {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 460px;
+    height: 390px;
+    border: 2px solid #ff2f2f;
+    box-shadow: 0 0 15px #ff2f2f;
+    z-index: 1;
+}
+
+.about__picture {
+    position: absolute;
+    width: 465px;
+    height: 400px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.about__text {
+    position: relative;
+    padding: 0 0 0 80px;
+}
+
+.about__head {
+    position: relative;
+    width: 200px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 500;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgba(255, 68, 0, 0.7), -40px -40px 0px rgba(206,89,55,0);
+    z-index: 2;
+}
+
+.about__us {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    font-size: 86px;
+    color:rgb(38, 38, 52);
+    font-weight: 800;
+    width: 700px;
+    z-index: 1;
+}
+
+.about__info {
+    position: relative;
+    padding: 30px 0 0 0;
+    z-index: 2;
+    color: #b7b7b7;
+}
+
+.about__paragraph {
+    font-size: 15px;
+    line-height: 19px;
+    max-width: 500px;
+    font-weight: 200;
+    padding: 9px 0;
+}
+
+.about__paragraph:first-child {
+    padding: 0 0 9px 0;
+}
+
+.about__highlight {
+    color: #fff;
+    font-weight: 600;
+}
+
+.about__lightcross {
+    position: absolute;
+    bottom: 0px;
+    right: 13.5%;
+    width: 80px;
+    height: 350px;
+}
+
+.about__button {
+    padding: 17px 0 0 0;
+}
+
+.category {
+    padding: 100px 0 0 0;
+}
+
+.category__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.category__head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+.category__label {
+    display: inline-block;
+    max-width: 680px;
+}
+
+.category__list {
+    padding: 90px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.category__list1 {
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.category__type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 20px 0;
+}
+
+.category__difference {
+    display: flex;
+    flex-direction: column;
+}
+
+.category__image {
+    width: 120px;
+    height: 90px;
+}
+
+.motorcycle {
+    transform: rotateY(180deg);
+}
+
+.car {
+    width: 150px;
+    height: 100px;
+    transform: translateY(8px);
+}
+
+.kamaz {
+    width: 170px;
+    height: 120px;
+}
+
+.bus  {
+    width: 190px;
+    height: 120px;
+    transform: translateY(5px);
+}
+
+.special {
+    width: 190px;
+    height: 120px;
+    transform: translateY(5px);
+}
+
+.category__button {
+    margin: 20px 0 0 0;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 14px 30px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 5px #2f3dff;
+    transition: .1s;
+    border-radius: 3px;
+}
+
+.category__button:hover {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 14px 30px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 42%, #9EEFE1 100%);
+    background-size: 200% auto;
+    transition: .2s;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.4);
+} 
+
+.advantages {
+    padding: 150px 0 0 0;
+}
+
+.advantages__container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.advantages__head {
+    text-align: center
+}
+
+.advantages__box {
+    display: flex;
+}
+
+.advantages__label {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.advantages__gallery {
+    padding: 70px 0 0 0;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    gap: 30px;
+}
+
+.advantages__picture {
+    width: 160px;
+    height: 210px;
+    margin: -20px 0 0 0;
+}
+
+.woman {
+    width: 290px;
+    height: 360px;
+}
+
+.auto {
+    width: 210px;
+    height: 100px;
+    margin: -130px 0 0 -10px;
+}
+
+.rudder {
+    margin: 0 0 0 40px;
+}
+
+.advantages__cone {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+}
+
+.advantages__points {
+    padding: 70px 0 0 140px;
+}
+
+.advantages__element {
+    padding: 12px 0;
+}
+
+.advantages__text {
+    font-size: 14px;
+    display: inline-block;
+    margin: 8px 0 0 62px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.promocode {
+    padding: 80px 0 0 0;
+}
+
+.promocode__container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* .promocode__form {
+    width: 1370px;
+    height: 300px;
+    margin: auto;
+    transform: perspective(1370px) rotateX(25deg);
+    background-color: rgb(45, 45, 67);
+    padding: 0 0 0 400px;
+} */
+
+.promocode__form {
+    position: relative;
+    width: 100%;
+    height: 285px;
+    padding: 50px 0 0 400px;
+    background-color: rgb(45, 45, 67);
+}
+
+.promocode__form:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-bottom: 285px solid rgb(45, 45, 67);
+    border-left: 50px solid transparent;
+}
+
+.promocode__form:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: -50px;
+    width: 0;
+    height: 0;
+    border-bottom: 285px solid rgb(45, 45, 67);
+    border-right: 50px solid transparent;
+}
+
+.promocode__title {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.promocode__free {
+    font-size: 38px;
+}
+
+.promocode__pdr {
+    position: absolute;
+    top: 22px;
+    left: 120px;
+    width: 160px;
+    height: 240px;
+}
+
+.promocode__details {
+    width: 750px;
+    padding: 12px 0 0 0;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.promocode__data {
+    padding: 40px 0 0 0;
+}
+
+.promocode__field {
+    width: 210px;
+    height: 54px;
+    background-color: rgb(45, 45, 67);
+    border: 1px solid #8c8975b3;
+    box-shadow: 0 0 6px #8c8975b3;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 20px 0 0;
+    color: #fff;
+}
+
+.category__plus {
+    padding: 30px 0 0 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    max-width: 120px;
+    text-transform: uppercase;
+}
+
+.category__description {
+    padding: 15px 0 0 0;
+    font-size: 15px;
+    display: inline-block;
+    color: grey;
+    width: 200px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.category__write {
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.subscribe {
+    padding: 120px 0 0 0;
+}
+
+.subscribe__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: rgb(45, 45, 67);
+    height: 100px;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.subscribe__gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.subscribe__photo {
+    height: 340px;
+}
+
+.map__image {
+    width: 100%;
+    height: 900px;
+}
+
+.map {
+    position: relative;
+}
+
+.map__contact {
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    width: 670px;
+    height: 600px;
+    background-color: rgb(45, 45, 67);
+    padding: 70px 100px 70px 100px;
+}
+
+.map__search {
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgba(255, 68, 0, 0.3), -40px -40px 0px rgba(206,89,55,0);
+    z-index: 2;
+}
+
+.map__area {
+    padding: 30px 0 0 0;
+    position: relative;
+    color: #ad682b;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 4px #ffffff42, 0 -2px 10px rgba(255, 255, 255, 0.1), -40px -40px 0px rgba(206,89,55,0);
+    z-index: 2;
+}
+
+.map__input {
+    margin: 20px 0 0 0;
+}
+
+.bigger {
+    font-size: 15px;
+    width: 280px;
+}
+
+.map__help {
+    margin: 40px 0 0 0;
+    border: 1px solid #8c8975b3;
+    box-shadow: 0 0 6px #8c8975b3;
+    padding: 40px 40px 40px 40px;
+    width: 280px;
+    text-align: center;
+}
+
+.map__title {
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.4);
+}
+
+.map__text {
+    text-align: center;
+    padding: 16px 0 0 0;
+    font-size: 13px;
+    color: grey;
+    line-height: 18px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+}
+
+.map__write {
+    padding: 27px 0 0 0;
+}
+
+.biggest {
+    width: 280px;
+}
+
+.map__car {
+    width: 420px;
+    height: 200px;
+    position: absolute;
+    bottom: 175px;
+    right: -125px;
+    transform: rotate(65deg);
+}
+
+.category__icon {
+    width: 75px;
+    height: 75px;
+}
+
+.foot {
+    background-color: rgb(45, 45, 67);
+}
+
+.foot__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.foot__copyright {
+    font-size: 15px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+@media (max-width: 1826px) {
+    .last {
+        display: none;
+    }
+}
+
+@media (max-width: 1750px) {
+    .background-car {
+        width: 600px;
+        height: 420px;
+        position: absolute;
+        top: 300px;
+        right: 250px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .promocode__form:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 0 solid rgb(45, 45, 67);
+        border-left: 0 solid transparent;
+    }
+    
+    .promocode__form:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 0 solid rgb(45, 45, 67);
+        border-right: 0 solid transparent;
+    }
+
+    .promocode__pdr {
+        display: none;
+    }
+
+    .promocode__form {
+        text-align: center;
+        padding: 50px 0 0 0;
+        width: 100%;
+    }
+
+    .promocode__details {
+        width: 100%;
+    }
+
+    .category__list {
+        width: 100%;
+    }
+
+    .container, .category__container, .promocode__container, .foot__container {
+        width: 100%;
+    }
+
+    .header__info {
+        padding: 0 0 0 40%;
+        justify-self: flex-end;
+    }
+
+    .about__us {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        font-size: 86px;
+        color:rgb(38, 38, 52);
+        font-weight: 800;
+        width: 30vw;
+        z-index: 1;
+    }
+
+    .about__lightcross {
+        right: 4%;
+    }
+}
+
+@media (max-width: 1460px) {
+    .subscribe__photo {
+        height: 275px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .header__nav {
+        padding: 35px 20px 0 20px;
+    }
+
+    .category__list {
+        padding: 90px 20px 0 20px;
+    }
+
+    .category__list1 {
+        padding: 50px 20px 0 20px;
+    }
+
+    .foot__container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .background-car {
+        width: 500px;
+        height: 360px;
+        right: 150px;
+    }
+
+    .entry__head {
+        font-size: 52px;
+    }
+
+    .entry__smaller {
+        font-size: 44px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .about__lightcross {
+        width: 64px;
+        height: 280px;
+        right: 5%;
+    }
+
+    .about__conus {
+        width: 50px;
+        height: 65px;
+    }
+
+    .about__picture {
+        width: 380px;
+        height: 350px;
+    }
+
+    .about__frame {
+        width: 375px;
+        height: 340px;
+    }
+
+    .about__school {
+        width: 380px;
+        height: 350px;
+    }
+
+    .about__text {
+        padding: 0 0 0 45px;
+    }
+
+    .about__us {
+        left: 45px;
+    }
+
+    .background-city {
+        width: 900px;
+        height: 470px;
+        top: 100px;
+        right: 70px;
+    }
+
+    .prelast {
+        display: none;
+    }
+
+    .about__block {
+        justify-content: center;
+    }
+
+    .map__contact {
+        right: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .category__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .category__plus {
+        padding: 21px 0 0 0;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 100px;
+    }
+
+    .category__description {
+        font-size: 14px;
+        max-width: 150px;
+    }
+
+    .entry {
+        padding: 200px 20px 0 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .entry__head {
+        font-size: 48px;
+        max-width: 400px;
+    }
+
+    .entry__smaller {
+        font-size: 40px;
+    }
+
+    .background-car {
+        width: 400px;
+        height: 300px;
+        right: 70px;
+    }
+
+    .background-city {
+        width: 750px;
+        height: 400px;
+        top: 150px;
+        right: 30px;
+    }
+
+    .gradient-button {
+        padding: 16px 32px;
+    }
+
+    .promocode__field {
+        width: 150px;
+        height: 45px;
+    }
+
+    .entry {
+        padding: 150px 20px 0 20px;
+    }
+
+    .about__block {
+        padding: 125px 0 0 0;
+    }
+
+    .about__arrow {
+        padding: 30px 0 0 0;
+    }
+
+    .about {
+        height: 670px;
+    }
+
+    .about__lightcross {
+        width: 50px;
+        height: 200px;
+        right: 5%;
+    }
+
+    .rudder, .auto {
+        display: none;
+    }
+
+    .advantages__gallery {
+        padding: 70px 0 0 0;
+        display: grid;
+        grid-template-columns: 290px;
+        gap: 30px;
+    }
+
+    .advantages__box {
+        padding: 0 20px;
+    }
+
+    .promocode__form {
+        text-align: center;
+        padding: 50px 20px 0 20px;
+        width: 100%;
+    }
+
+    .category__list {
+        flex-wrap: wrap;
+        padding: 60px 20px 0 20px;
+    }
+
+    .category {
+        padding: 70px 0 0 0;
+    }
+
+    .advantages {
+        padding: 85px 0 0 0;
+    }
+
+    .category__write {
+        padding: 45px 0 0 0;
+    }
+
+    .subscribe {
+        padding: 90px 0 0 0;
+    }
+
+    .map__image {
+        width: 100%;
+        height: 800px;
+    }
+
+    .map__contact {
+        top: 100px;
+        right: 100px;
+        width: 600px;
+        height: 560px;
+        padding: 60px 90px 60px 90px;
+    }
+
+    .map__car {
+        width: 360px;
+        height: 170px;
+        bottom: 175px;
+        right: -100px;
+    }
+
+    .about__picture {
+        margin: 50px 0 0 0;
+        width: 300px;
+        height: 250px;
+    }
+
+    .about__frame {
+        margin: 50px 0 0 0;
+        width: 295px;
+        height: 240px;
+    }
+
+    .about__school {
+        width: 300px;
+        height: 250px;
+    }
+
+    .about__text {
+        padding: 0 0 0 30px;
+    }
+
+    .about__us {
+        font-size: 64px;
+        left: 30px;
+        min-width: 240px;
+    }
+
+    .about__head {
+        font-size: 25px;
+    }
+
+    .about__info {
+        padding: 18px 0 0 0;
+    }
+
+    .about__paragraph {
+        font-size: 14px;
+        line-height: 17px;
+        max-width: 400px;
+        font-weight: 200;
+        padding: 6px 0;
+    }
+
+    .advantages__points {
+        padding: 60px 0 0 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header__info {
+        padding: 0 0 0 20%;
+        justify-self: flex-end;
+    }
+
+    .subscribe__photo {
+        height: 200px;
+    }
+
+    .last {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .map__contact {
+        top: 80px;
+        right: 50px;
+        width: 485px;
+        height: 485px;
+        padding: 30px 50px 30px 50px;
+    }
+
+    .map__car {
+        width: 300px;
+        height: 140px;
+        bottom: 175px;
+        right: -100px;
+        transform: rotate(70deg);
+    }
+
+    .map__help {
+        margin: 25px 0 0 0;
+    }
+
+    .map__area {
+        padding: 20px 0 0 0;
+    }
+
+    .map__search {
+        font-size: 24px;
+    }
+
+    .map__area {
+        font-size: 18px;
+    }
+
+    .map__help {
+        padding: 30px;
+    }
+
+    .map__image {
+        height: 680px;
+    }
+
+    .entry {
+        padding: 120px 15px 0 15px;
+    }
+
+    .header__nav {
+        padding: 35px 15px 0 15px;
+    }
+
+    .category__list {
+        padding: 60px 15px 0 15px;
+    }
+
+    .advantages__box {
+        padding: 0 15px;
+    }
+
+    .promocode__form {
+        padding: 50px 15px 0 15px;
+    }
+
+    .category__list1 {
+        padding: 50px 15px 0 15px;
+    }
+
+    .foot__container {
+        padding: 20px 15px 20px 15px;
+    }
+
+    .entry__head {
+        font-size: 42px;
+    }
+
+    .entry__smaller {
+        font-size: 35px;
+    }
+
+    .advantages__points {
+        padding: 50px 0 0 25px;
+    }
+
+    .background-car {
+        top: 320px;
+        width: 320px;
+        height: 230px;
+        right: 40px;
+    }
+
+    .background-city {
+        top: 160px;
+        width: 600px;
+        height: 350px;
+    }
+
+    .entry__text {
+        max-width: 340px;
+        font-size: 14px;
+    }
+
+    .promocode__data {
+        padding: 25px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .promocode__title {
+        font-size: 27px;
+    }
+
+    .promocode__free {
+        font-size: 34px;
+    }
+
+    .promocode__details {
+        padding: 9px 0 0 0;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .promocode__form {
+        position: relative;
+        width: 100%;
+        height: 335px;
+        padding: 25px;
+        background-color: rgb(45, 45, 67);
+    }
+
+    .promocode__field {
+        margin: 0 0 15px 0;
+    }
+
+    .category {
+        padding: 60px 0 0 0;
+    }
+
+    .category__list1 {
+        padding: 40px 0 0 0;
+    }
+
+    .subscribe {
+        padding: 75px 0 0 0;
+    }
+
+    .advantages {
+        padding: 70px 0 0 0;
+    }
+
+    .category__label {
+        font-size: 27px;
+        max-width: 600px;
+        line-height: 32px;
+    }
+
+    .advantages__label {
+        font-size: 27px;
+    }
+
+    .subscribe__container {
+        font-size: 24px;
+    }
+
+    .header__register {
+        width: 156px;
+        height: 38px;
+        font-size: 11px;
+    }
+
+    .woman {
+        width: 220px;
+        height: 294px;
+    }
+
+    .advantages__gallery {
+        grid-template-columns: 220px;
+    }
+
+    .advantages__points {
+        padding: 35px 0 0 16px;
+    }
+
+    .advantages__text {
+        margin: 2px 0 0 47px;
+    }
+
+    .advantages__cone {
+        width: 35px;
+        height: 40px;
+    }
+
+    .about__picture {
+        display: none;
+    }
+
+    .about__frame {
+        display: none;
+    }
+
+    .about__school {
+        display: none;
+    }
+
+    .about {
+        height: 610px;
+    }
+
+    .about__block {
+        padding: 95px 0 0 0;
+    }
+
+    .about__conus {
+        width: 40px;
+        height: 56px;
+    }
+}
+
+@media (max-width: 700px) {
+    .category__list1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 21px 0 0 120px;
+    }
+
+    .category__difference {
+        padding: 10px 0;
+    }
+
+    .category__plus {
+        padding: 21px 0 0 0;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 300px;
+    }
+
+    .category__description {
+        font-size: 14px;
+        min-width: 285px;
+    }
+
+    .promocode__title {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .subscribe__container {
+        height: 80px;
+        font-size: 22px;
+    }
+
+    .subscribe__photo {
+        height: 150px
+    }
+
+    .background-city {
+        top: 180px;
+        width: 500px;
+        height: 300px;
+    }
+
+    .entry__head {
+        font-size: 40px;
+    }
+
+    .entry__smaller {
+        font-size: 34px;
+    }
+
+    .header__info {
+        padding: 0 0 0 6%;
+        justify-self: flex-end;
+    }
+}
+
+@media (max-width: 600px) {
+    .map__contact {
+        top: 64px;
+        right: 10%;
+        right: 50px;
+        width: 460px;
+        height: 460px;
+        padding: 21px 40px 21px 40px;
+    }
+
+    .map__search {
+        font-size: 22px;
+    }
+
+    .map__area {
+        font-size: 17px;
+        line-height: 21px;
+        padding: 12px 0 0 0;
+    }
+
+    .map__help {
+        margin: 16px 0 0 0;
+        padding: 20px;
+    }
+
+    .map__title {
+        font-size: 16px;
+    }
+
+    .advantages__gallery {
+        padding: 50px 0 0 0;
+    }
+
+    .advantages__box {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .advantages__points {
+        padding: 20px 0 0 0;
+    }
+
+    .woman {
+        text-align: center;
+        width: 172px;
+        height: 210px;
+        margin: 0 0 0 50px;
+    }
+
+    .map__car {
+        display: none;
+    }
+
+    .map__contact {
+        text-align: center;
+    }
+
+    .background-car {
+        right: 20px;
+    }
+
+    .map__wrap {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 560px) {
+    .entry {
+        padding: 90px 15px 0 15px;
+    }
+
+    .background-car {
+        display: none;
+    }
+
+    .background-city {
+        display: none;
+    }
+
+    .map__contact {
+        top: 64px;
+        right: 10%;
+        right: 50px;
+        width: 350px;
+        height: 420px;
+        padding: 21px 40px 21px 40px;
+    }
+
+    .foot__copyright {
+        max-width: 200px;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__hidden {
+        display: block;
+    }
+
+    .map__image {
+        height: 570px;
+    }
+
+    .category__list1 {
+        padding: 21px 0 0 70px;
+    }
+
+    .category__plus {
+        padding: 14px 0 0 0;
+    }
+
+    .category__description {
+        padding: 10px 0 0 0;
+    }
+
+    .category__write {
+        padding: 32px 0 0 0;
+    }
+
+    .subscribe__container {
+        padding: 0 15px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 485px) {
+    .subscribe__photo {
+        height: 46.3vw;
+    }
+
+    .wider {
+        width: 100%;
+        height: 70vw;
+    }
+
+    .about__lightcross {
+        width: 43px;
+        height: 165px;
+    }
+
+    .about__head {
+        font-size: 24px;
+    }
+
+    .about__us {
+        left: 15px;
+        font-size: 58px;
+    }
+
+    .about__text {
+        padding: 0 15px 0 15px;
+    }
+
+    .about__conus {
+        width: 32px;
+        height: 44px;
+        left: 75%;
+    }
+
+    .promocode__details {
+        padding: 0;
+    }
+
+    .category__list1 {
+        padding: 21px 0 0 30px;
+    }
+
+    .map__contact {
+        right: 4%;
+        padding: 21px 30px;
+    }
+
+    .map__help {
+        padding: 16px;
+    }
+
+    .foot__copyright {
+        font-size: 13px;
+        width: 120px;
+    }
+
+    .header__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__label {
+        max-width: 100px;
+        vertical-align: -26px;
+    }
+
+    .foot__label {
+        max-width: 100px;
+        vertical-align: -26px;
+    }
+
+    .header__info {
+        padding: 0 0 0 3%;
+    }
+}
+
+@media (max-width: 404px) {
+    .category__list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .category__label {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .category__list {
+        padding: 50px 0 0 0;
+    }
+
+    .advantages {
+        padding: 60px 0 0 0;
+    }
+
+    .advantages__label {
+        font-size: 25px;
+    }
+
+    .advantages__gallery {
+        padding: 40px 0 0 0;
+    }
+
+    .promocode {
+        padding: 70px 0 0 0;
+    }
+
+    .category__label {
+        font-size: 24px;
+    }
+
+    .category {
+        padding: 40px 0 0 0;
+    }
+
+    .category__list1 {
+        padding: 21px 0 0 24px;
+    }
+
+    .subscribe {
+        padding: 70px 0 0 0;
+    }
+
+    .d {
+        padding: 21px 24px;
+    }
+
+    .map__input {
+        margin: 15px 0 0 0;
+    }
+
+    .map__help {
+        width: 220px;
+        margin: 10px 0 0 0;
+        padding: 13px;
+    }
+
+    .map__contact {
+        width: 300px;
+        height: 420px;
+    }
+
+    .map__write {
+        padding: 27px 0 0 0;
+    }
+
+    .biggest {
+        width: 240px;
+        padding: 12px 21px;
+    }
+
+    .bigger {
+        height: 35px;
+    }
+
+    .map__title {
+        font-size: 15px;
+    }
+
+    .about__lightcross {
+        display: none;
+    }
+
+    .entry__head {
+        font-size: 38px;
+    }
+    
+    .entry__smaller {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 360px) {
+    .map__contact {
+        right: 3%;
+        padding: 21px 30px;
+    }
+
+    .about__block {
+        padding: 80px 0 0 0;
+    }
+
+    .about {
+        height: 625px;
+    }
+
+    .about__button {
+        padding: 14px 0 0 0;
+    }
+}
